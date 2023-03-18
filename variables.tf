@@ -15,15 +15,15 @@ variable "app_fqdn" {
 }
 
 variable "spoke_site_selector" {
-  default = ["ves.io/siteName in (ves-io-ny8-nyc, ves-io-wes-sea)"]
+  default = "ves.io/siteName in (ves-io-dc12-asha)"
 }
 
 variable "hub_site_selector" {
-  default = ["ves.io/siteName in (ves-io-dc12-ash)"]
+  default = "ves.io/siteName in (ves-io-dc12-ash)"
 }
 
 variable "utility_site_selector" {
-  default = ["ves.io/siteName in (ves-io-dc12-ash)"]
+  default = "ves.io/siteName in (ves-io-dc12-ash)"
 }
 
 variable "cred_expiry_days" {

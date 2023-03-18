@@ -1,21 +1,21 @@
 variable "api_url" {
-  default = "https://f5-bd.console.ves.volterra.io/api"
+  default = "https://<tenant name>.console.ves.volterra.io/api"
 }
 
 # name of the xc api p12 certificate in the creds directory
 # you will also have to set the environment variable VES_P12_PASSWORD to the cert password
 variable "api_p12_file" {
-  default = "f5-bd.console.ves.volterra.io.api-creds.p12"
+  default = "<name of p12 file in the creds directory>"
 }
 
 # base is used for the two namespaces that are created
 variable "base" {
-  default = "demo-app"
+  default = "<base name>"
 }
 
 # dns name for the load balancer for the application frontend
 variable "app_fqdn" {
-  default = "demoshop.xc.f5demo.net"
+  default = "<app fqdn>"
 }
 
 variable "spoke_site_selector" {
@@ -36,7 +36,7 @@ variable "cred_expiry_days" {
 
 # name of the registry server to pull any containers that aren't from gcr.io
 variable "registry_server" {
-  default = "ghcr.io/dgarrisonf5"
+  default = "<container repo server  name>"
 }
 
 variable "registry_config_json" {

@@ -3,7 +3,7 @@ variable "api_url" {
 }
 
 variable "api_p12_file" {
-  default = "f5-bd.console.ves.volterra.io.api-creds"
+  default = "f5-bd.console.ves.volterra.io.api-creds.p12"
 }
 
 variable "base" {

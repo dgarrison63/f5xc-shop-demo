@@ -1,9 +1,9 @@
 variable "api_url" {
-  default = "https://tenant.ves.volterra.io/api"
+  default = "https://f5-bd.console.ves.volterra.io/api"
 }
 
 variable "api_p12_file" {
-  default = "./creds/tenant.api-creds.p12"
+  default = "f5-bd.console.ves.volterra.io.api-creds"
 }
 
 variable "base" {
@@ -11,7 +11,7 @@ variable "base" {
 }
 
 variable "app_fqdn" {
-  default = "demo-app.tenant.example.com"
+  default = "demoshop.xc.f5demo.net"
 }
 
 variable "spoke_site_selector" {
@@ -31,11 +31,11 @@ variable "cred_expiry_days" {
 }
 
 variable "registry_server" {
-  default = "some_registry.example.com"
+  default = "ghcr.io/dgarrisonf5"
 }
 
 variable "registry_config_json" {
-  default     = "b64 encoded json"
+  default     = "ewoJImF1dGhzIjogewoJCSJnaGNyLmlvIjoge30KCX0sCgkiY3JlZHNTdG9yZSI6ICJvc3hrZXljaGFpbiIKfQ=="
   description = "registry config data string in type kubernetes.io/dockerconfigjson"
 }
 

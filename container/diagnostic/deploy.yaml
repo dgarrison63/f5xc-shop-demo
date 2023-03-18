@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: server
-          image: f5demos.azurecr.io/diagnostic
+          image: "${var.registry_server}/diagnostic"
           command:
             - /bin/sh
           args:

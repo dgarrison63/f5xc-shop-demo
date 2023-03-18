@@ -51,7 +51,7 @@
       spec:
         containers:
           - name: server
-            image: f5demos.azurecr.io/podcleaner
+            image: "${var.registry_server}/podcleaner"
             command:
               - /bin/sh
             args:

@@ -1,4 +1,5 @@
 *.md
 !README.md
 container/
-terraform.tfstate*
+terraform.tfstate
+terraform.tfstate.*

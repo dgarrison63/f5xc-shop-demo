@@ -3,3 +3,4 @@ __pycache__
 .terraform*
 !.terraformignore
 .DS_store
+terraform.tfstate*
